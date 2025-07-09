@@ -1,16 +1,27 @@
-## Hi there 👋
+# Weather Dashboard CLI
 
-<!--
-**mohd-galadanci/mohd-galadanci** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+A simple command-line weather dashboard using the OpenWeatherMap API.
 
-Here are some ideas to get you started:
+## Usage
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+1. **Get an API key** from [OpenWeatherMap](https://openweathermap.org/api).
+2. **Install requirements:**
+   ```
+   pip install -r requirements.txt
+   ```
+3. **Run the dashboard:**
+   ```
+   python main.py "London,UK" --apikey YOUR_API_KEY
+   ```
+
+## Files
+
+- `main.py`: Entry point
+- `cli/`: CLI logic
+- `dashboard/`: Dashboard logic
+- `api/`: Weather API handler
+- `utils/`: Output formatting
+
+---
+
+**You can extend this code to support more features, more APIs, or a web/GUI interface.**

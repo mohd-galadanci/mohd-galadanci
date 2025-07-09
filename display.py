@@ -1,0 +1,16 @@
+def print_weather(data: dict):
+    name = data.get("name", "Unknown")
+    country = data.get("sys", {}).get("country", "")
+    weather = data.get("weather", [{}])[0].get("description", "N/A").capitalize()
+    temp = data.get("main", {}).get("temp", "N/A")
+    feels_like = data.get("main", {}).get("feels_like", "N/A")
+    humidity = data.get("main", {}).get("humidity", "N/A")
+    wind_speed = data.get("wind", {}).get("speed", "N/A")
+
+    print("-" * 40)
+    print(f"Weather for {name}, {country}")
+    print(f"Condition:   {weather}")
+    print(f"Temperature: {temp}°C (feels like {feels_like}°C)")
+    print(f"Humidity:    {humidity}%")
+    print(f"Wind Speed:  {wind_speed} m/s")
+    print("-" * 40)
